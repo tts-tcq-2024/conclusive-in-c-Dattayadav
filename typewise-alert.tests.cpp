@@ -45,7 +45,6 @@ BreachType expected_breach = NORMAL;
 BatteryCharacter batteryChar = {PASSIVE_COOLING," "};
 checkAndAlert(TO_CONTROLLER,batteryChar,5);
 EXPECT_EQ(mock_breach,expected_breach);
-
 }
 
 TEST(TypeWiseAlertTestSuite,Test_check_and_alter_boundary_condition) {
@@ -54,5 +53,4 @@ BreachType expected_breach = NORMAL;
 BatteryCharacter batteryChar = {PASSIVE_COOLING," "};
 checkAndAlert(TO_CONTROLLER,batteryChar,35);
 EXPECT_EQ(mock_breach,expected_breach);
-
 }
